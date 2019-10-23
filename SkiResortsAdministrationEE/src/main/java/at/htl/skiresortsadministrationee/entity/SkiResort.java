@@ -66,5 +66,14 @@ public class SkiResort {
         this.highestPoint = highestPoint;
     }
 
-
+    @Override
+    public String toString() {
+        return "SkiResort{" +
+                "id=" + id +
+                ", skiResortName='" + skiResortName + '\'' +
+                ", getSkiResortTown='" + getSkiResortTown + '\'' +
+                ", lowestPoint=" + lowestPoint +
+                ", highestPoint=" + highestPoint +
+                '}';
+    }
 }
