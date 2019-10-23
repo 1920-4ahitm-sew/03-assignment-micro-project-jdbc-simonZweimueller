@@ -8,6 +8,7 @@ import javax.enterprise.context.Initialized;
 import javax.enterprise.event.Observes;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.persistence.TypedQuery;
 import javax.transaction.Transactional;
 
 @ApplicationScoped
@@ -27,4 +28,11 @@ public class InitSkiResorts {
     public void tearDown(@Observes @Destroyed(ApplicationScoped.class) Object init) {
         // when app is undeployed
     }
+
+    /**public SkiResort getSkiResortById(int id) {
+        System.out.printf("help1");
+        TypedQuery<SkiResort> query = em.createNamedQuery("SkiResortGetById", SkiResort.class).setParameter(1, id);
+        System.out.printf("help2");
+        return query.getSingleResult();
+    }*/
 }
