@@ -1,12 +1,10 @@
 package at.htl.skiresortsadministrationee.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
+//@NamedQueries(@NamedQuery(name = "SkiResortGetById", query = "select s from SkiResort s where s.id = ?1"))
 public class SkiResort implements Serializable {
 
     @Id
