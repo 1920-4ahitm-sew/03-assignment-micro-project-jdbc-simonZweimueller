@@ -16,6 +16,16 @@ public class SkiResort {
     int lowestPoint;
     int highestPoint;
 
+    public SkiResort(String skiResortName, String getSkiResortTown, int lowestPoint, int highestPoint) {
+        this.skiResortName = skiResortName;
+        this.getSkiResortTown = getSkiResortTown;
+        this.lowestPoint = lowestPoint;
+        this.highestPoint = highestPoint;
+    }
+
+    public SkiResort() {
+    }
+
     public Long getId() {
         return id;
     }
@@ -55,4 +65,6 @@ public class SkiResort {
     public void setHighestPoint(int highestPoint) {
         this.highestPoint = highestPoint;
     }
+
+
 }
