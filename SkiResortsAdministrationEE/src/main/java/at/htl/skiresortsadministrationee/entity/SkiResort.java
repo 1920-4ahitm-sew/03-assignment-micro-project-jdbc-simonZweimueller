@@ -12,13 +12,13 @@ public class SkiResort {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     String skiResortName;
-    String getSkiResortTown;
+    String skiResortTown;
     int lowestPoint;
     int highestPoint;
 
-    public SkiResort(String skiResortName, String getSkiResortTown, int lowestPoint, int highestPoint) {
+    public SkiResort(String skiResortName, String skiResortTown, int lowestPoint, int highestPoint) {
         this.skiResortName = skiResortName;
-        this.getSkiResortTown = getSkiResortTown;
+        this.skiResortTown = skiResortTown;
         this.lowestPoint = lowestPoint;
         this.highestPoint = highestPoint;
     }
@@ -42,12 +42,12 @@ public class SkiResort {
         this.skiResortName = skiResortName;
     }
 
-    public String getGetSkiResortTown() {
-        return getSkiResortTown;
+    public String getSkiResortTown() {
+        return skiResortTown;
     }
 
-    public void setGetSkiResortTown(String getSkiResortTown) {
-        this.getSkiResortTown = getSkiResortTown;
+    public void setSkiResortTown(String skiResortTown) {
+        this.skiResortTown = skiResortTown;
     }
 
     public int getLowestPoint() {
@@ -71,7 +71,7 @@ public class SkiResort {
         return "SkiResort{" +
                 "id=" + id +
                 ", skiResortName='" + skiResortName + '\'' +
-                ", getSkiResortTown='" + getSkiResortTown + '\'' +
+                ", skiResortTown='" + skiResortTown + '\'' +
                 ", lowestPoint=" + lowestPoint +
                 ", highestPoint=" + highestPoint +
                 '}';
