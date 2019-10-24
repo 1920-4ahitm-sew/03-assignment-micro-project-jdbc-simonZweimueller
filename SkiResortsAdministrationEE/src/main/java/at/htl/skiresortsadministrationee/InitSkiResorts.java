@@ -28,11 +28,4 @@ public class InitSkiResorts {
     public void tearDown(@Observes @Destroyed(ApplicationScoped.class) Object init) {
         // when app is undeployed
     }
-
-    /**public SkiResort getSkiResortById(int id) {
-        System.out.printf("help1");
-        TypedQuery<SkiResort> query = em.createNamedQuery("SkiResortGetById", SkiResort.class).setParameter(1, id);
-        System.out.printf("help2");
-        return query.getSingleResult();
-    }*/
 }
