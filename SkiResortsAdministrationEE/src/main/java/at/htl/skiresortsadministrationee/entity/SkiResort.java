@@ -4,9 +4,7 @@ import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
-@NamedQueries(@NamedQuery(name = "GetAllSkiResorts", query = "select s from SkiResort s")
-//,@NamedQuery(name = "GetSkiResortById", query = "select sr from SkiResort sr where sr.id = ?1")
-)
+@NamedQueries(@NamedQuery(name = "GetAllSkiResorts", query = "select s from SkiResort s"))
 public class SkiResort implements Serializable {
 
     @Id
